@@ -25,4 +25,4 @@ When a custom domain exists, update `SITE` in `build.py` and add it under Settin
 ## Assets
 - Fonts: Geist and Geist Mono (SIL Open Font License, see `assets/fonts/LICENSE.TXT`)
 - Icons: Phosphor (MIT, see `assets/icons/LICENSE`)
-- Screenshots in `assets/img/` are from a TARS demo run on sample data.
+- Diagrams are plain HTML and CSS, so they follow the site's fonts, colors and light/dark theme.

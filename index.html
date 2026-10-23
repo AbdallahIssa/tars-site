@@ -9,7 +9,7 @@
 <meta property="og:description" content="TARS learns your company's code, docs, tickets and tools on your own machines, then answers, debugs and reports with evidence. Nothing leaves your network.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://abdallahissa.github.io/tars-site/index.html">
-<meta property="og:image" content="https://abdallahissa.github.io/tars-site/assets/img/dash-run.webp">
+<meta property="og:image" content="https://abdallahissa.github.io/tars-site/assets/img/og.png">
 <meta name="theme-color" content="#080d12">
 <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -66,10 +66,38 @@
 
 <section style="padding-top: 24px">
   <div class="wrap">
-    <figure class="shot-frame reveal" style="margin: 0">
-      <div class="shot"><img src="assets/img/dash-run.webp" width="2160" height="1350" alt="TARS dashboard showing a finished investigation: summary, root cause, reproduction and numbered evidence" loading="lazy"></div>
+    <figure class="arch reveal" role="img" aria-label="How TARS works: your sources feed the Knowledge Cave, the TARS agent asks and investigates using your tools with your approval, and hands back answers with evidence. Everything stays inside your network.">
+      <span class="arch-net"><i class="ph ph-shield-check" aria-hidden="true"></i>Your network</span>
+      <div class="arch-col">
+        <span class="arch-title">Your sources</span>
+        <span class="arch-item"><i class="ph ph-code" aria-hidden="true"></i>Code</span>
+        <span class="arch-item"><i class="ph ph-file-text" aria-hidden="true"></i>Specs and docs</span>
+        <span class="arch-item"><i class="ph ph-ticket" aria-hidden="true"></i>Tickets</span>
+        <span class="arch-item"><i class="ph ph-book-open" aria-hidden="true"></i>Tool manuals</span>
+      </div>
+      <span class="arch-arrow" aria-hidden="true"><i class="ph ph-arrow-right"></i></span>
+      <div class="arch-node">
+        <span class="arch-ring"><i class="ph ph-database" aria-hidden="true"></i></span>
+        <strong>Knowledge Cave</strong>
+        <span>One local index. Only what changed is read again.</span>
+      </div>
+      <span class="arch-arrow" aria-hidden="true"><i class="ph ph-arrows-left-right"></i></span>
+      <div class="arch-node arch-core">
+        <span class="arch-ring"><b>TARS</b></span>
+        <strong>Ask or investigate</strong>
+        <span>Plans each step and uses your tools, with your approval.</span>
+        <span class="arch-tools"><i class="ph ph-plugs-connected" aria-hidden="true"></i>Your tools <i class="ph ph-seal-check" aria-hidden="true"></i>Approval</span>
+      </div>
+      <span class="arch-arrow" aria-hidden="true"><i class="ph ph-arrow-right"></i></span>
+      <div class="arch-col">
+        <span class="arch-title">You get</span>
+        <span class="arch-item"><i class="ph ph-chat-centered-text" aria-hidden="true"></i>Answers with sources</span>
+        <span class="arch-item"><i class="ph ph-magnifying-glass" aria-hidden="true"></i>Root-cause analyses</span>
+        <span class="arch-item"><i class="ph ph-file-code" aria-hidden="true"></i>Reproduction scripts</span>
+        <span class="arch-item"><i class="ph ph-chat-text" aria-hidden="true"></i>Ticket comments</span>
+      </div>
     </figure>
-    <p class="shot-caption">A real TARS investigation. Every claim in the answer points to the evidence behind it.</p>
+    <p class="shot-caption">The core of TARS. Every answer points to the evidence behind it, and nothing crosses the line of your network.</p>
   </div>
 </section>
 
@@ -84,7 +112,11 @@
         <i class="ph ph-database" aria-hidden="true"></i>
         <h3>The Knowledge Cave</h3>
         <p>Code, specs, requirements, test reports, tickets and tool manuals in one local index. Add a folder or remove one in a click; only what changed is read again.</p>
-        <div class="shot"><img src="assets/img/dash-knowledge.webp" width="2160" height="1350" alt="TARS Knowledge page listing the sources it has learned" loading="lazy"></div>
+        <div class="cave" aria-hidden="true">
+          <div class="cave-in"><span>Code</span><span>Specs</span><span>Requirements</span><span>Test reports</span><span>Tickets</span><span>Manuals</span></div>
+          <i class="ph ph-arrow-right cave-arrow"></i>
+          <div class="cave-core"><span class="cave-ring"><i class="ph ph-database"></i></span><span class="cave-label">Knowledge Cave</span><span class="cave-sub">+ add &middot; &minus; remove</span></div>
+        </div>
       </article>
       <article class="tile tile-b reveal" style="--i:1">
         <i class="ph ph-chats-circle" aria-hidden="true"></i>
@@ -149,7 +181,14 @@
         <li><i class="ph ph-quotes" aria-hidden="true"></i><span><b>Evidence</b> behind every conclusion, so you can check the work in seconds.</span></li>
       </ul>
     </div>
-    <div class="shot reveal" style="--i:1"><img src="assets/img/dash-approval.webp" width="2160" height="1350" alt="TARS waiting for approval before running an action, with Wind down and Halt buttons" loading="lazy"></div>
+    <div class="gate reveal" style="--i:1" role="img" aria-label="TARS proposes an action, waits for your approval, then runs it. Halt and Wind down are always available.">
+      <div class="gate-step"><span class="gate-ico"><i class="ph ph-lightbulb" aria-hidden="true"></i></span><div><strong>TARS proposes</strong><span>"Start the measurement to reproduce the issue."</span></div></div>
+      <span class="gate-line" aria-hidden="true"></span>
+      <div class="gate-step gate-you"><span class="gate-ico"><i class="ph ph-user-check" aria-hidden="true"></i></span><div><strong>You decide</strong><span class="gate-btns"><span class="g-btn g-ok"><i class="ph ph-check" aria-hidden="true"></i>Approve</span><span class="g-btn">Reject</span></span></div></div>
+      <span class="gate-line" aria-hidden="true"></span>
+      <div class="gate-step"><span class="gate-ico"><i class="ph ph-play" aria-hidden="true"></i></span><div><strong>TARS acts and records it</strong><span>The result becomes evidence in the audit trail.</span></div></div>
+      <div class="gate-stop"><span class="g-btn g-wind"><i class="ph ph-hourglass-medium" aria-hidden="true"></i>Wind down</span><span class="g-btn g-halt"><i class="ph ph-hand-palm" aria-hidden="true"></i>Halt</span><span class="gate-note">Always on screen</span></div>
+    </div>
   </div>
 </section>
 

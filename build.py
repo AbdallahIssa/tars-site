@@ -33,7 +33,7 @@ LAYOUT = """<!doctype html>
 <meta property="og:description" content="{description}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{site}assets/img/dash-run.webp">
+<meta property="og:image" content="{site}assets/img/og.png">
 <meta name="theme-color" content="#080d12">
 <link rel="icon" href="{r}assets/img/mark.svg" type="image/svg+xml">
 <link rel="preload" href="{r}assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
