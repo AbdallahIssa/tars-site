@@ -1,0 +1,51 @@
+<!-- title: Contact | TARS -->
+<!-- description: Book a TARS demo or get in touch with the TARS team. -->
+<!-- nav: contact -->
+
+<section class="page-hero">
+  <div class="wrap">
+    <h1>Let's talk about your team.</h1>
+    <p>Tell us what slows your engineers down. We will show you what TARS can do about it, on your own machines.</p>
+  </div>
+</section>
+
+<section style="padding-top: 24px">
+  <div class="wrap contact-grid">
+    <div class="contact-ways reveal">
+      <a class="way" href="mailto:{email}"><i class="ph ph-envelope-simple" aria-hidden="true"></i><span><small>Email</small>{email}</span></a>
+      <a class="way" href="{linkedin}" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo" aria-hidden="true"></i><span><small>LinkedIn</small>Abdallah Issa, founder</span></a>
+    </div>
+
+    <form class="card reveal" data-mailto="{email}" novalidate style="--i:1">
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" autocomplete="name" required>
+        <span class="err">Please tell us your name.</span>
+      </div>
+      <div class="field">
+        <label for="email">Work email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <span class="err">Please enter a valid email address.</span>
+      </div>
+      <div class="field">
+        <label for="company">Company</label>
+        <input id="company" name="company" autocomplete="organization">
+        <span class="help">Optional.</span>
+      </div>
+      <div class="field">
+        <label for="topic">What is this about?</label>
+        <select id="topic" name="topic">
+          <option>Demo</option><option>Partnership</option><option>Investment</option><option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <span class="help">For example: the tools you use and what a typical hard ticket looks like.</span>
+        <span class="err">Please write a short message.</span>
+      </div>
+      <button class="btn btn-primary" type="submit" style="justify-self: start">Send message <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i></button>
+      <p class="muted" data-sent hidden style="margin: 0; font-size: 15px">Your email app should open with the message ready. If it does not, write to {email}.</p>
+    </form>
+  </div>
+</section>
